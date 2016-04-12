@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title List of all cats
+  body
+    h1 All Cats Created
+    ul
+    for cat in cats
+      li
+        a(href='/cats/' + cat._id + '/edit') #{cat.name} - #{cat.color}
+    else 
+      li No cats here

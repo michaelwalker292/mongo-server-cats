@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Edit Cat details
+  body
+    h1 Edit #{name}
+    p Cat Name
+    form(name="createCat", method="post")
+        input(type="text", placeholder="Name", name="name" value="#{cat.name}")
+        p Cat Color  
+        input(type="text", placeholder="Color", name="color" value="#{cat.color}")
+        br
+        input(type="submit", value="Submit")
